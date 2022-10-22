@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:padding="@dimen/_24sdp"
+    tools:context=".DataEntryForm">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Update Address"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:hint="Name"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <!--        job starts here-->
+        <EditText
+            android:id="@+id/inputJob"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Job"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+        <!--        job ends here-->
+
+        <!--      phone starts  -->
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Phone Number"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <!--phone ends-->
+
+        <!--        present address starts-->
+        <EditText
+            android:id="@+id/inputPresentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Present Address"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+        <!--        present address ends-->
+        <!--        parmanent address starts-->
+        <EditText
+            android:id="@+id/inputParmanentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:hint="Parmanent Address"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/primary_text"
+            android:background="@drawable/background_input"
+            android:textSize="@dimen/_13ssp"
+            />
+        <!--        parmanent address ends-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textColor="@color/white"
+
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="Update"
+            app:cornerRadius="@dimen/_8sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="DELETE"
+            android:backgroundTint="@color/error"
+            app:cornerRadius="@dimen/_8sdp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
